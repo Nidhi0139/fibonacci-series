@@ -1,4 +1,5 @@
-FROM eclipse-temurin:17-jdk
+
+FROM eclipse-temurin:21-jdk 
 WORKDIR /app
-COPY target/fibonacci-series-1.0.jar app.jar               
+COPY target/fibonacci-series-*.jar app.jar               
 CMD ["java", "-jar", "app.jar"]
